@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>my-project</title>
+    <style>
+    p{
+      margin:0
+    }
+    </style>
+    <script src="http://172.17.9.60:6001/full/ckeditor.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_SVG">
+  </script>
+    <!-- <script src="//cdn.ckeditor.com/4.11.1/standard/ckeditor.js"></script>-->
+    <script type="text/x-mathjax-config">
+  MathJax.Hub.Register.StartupHook("End Jax",function () {
+    var BROWSER = MathJax.Hub.Browser;
+    var jax = "SVG";
+    if (BROWSER.isMSIE && BROWSER.hasMathPlayer) jax = "NativeMML";
+    return MathJax.Hub.setRenderer(jax);
+  });
+  </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>

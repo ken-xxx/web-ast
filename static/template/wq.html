@@ -1,0 +1,97 @@
+
+<div class="as-writing-question-block">
+    <div class="as-wq-area-block" qtype="wq">
+        {% set wordCount=0%}
+        <div class="as-wq-column">
+            <div class="as-wq-area-title-score">
+                <div class="as-wq-area-title">
+                    {{data.title |safe }}
+                    <span class="as-area-point">({{data.points}}分)</span>
+                </div>
+                <div class="as-wq-area-score-container"></div>
+            </div>
+            <div class="as-wq-area-content">
+                {% for row in range(0,23)%}
+                <div class="as-wq-row">
+                    {% for col in range(0,15)%} {% set wordCount=wordCount+1%}
+                    <div class="as-wq-frame-border">
+                        {% if wordCount==100 or wordCount==200 or wordCount==300 or wordCount==400 or wordCount==500 or wordCount==600 or wordCount==700
+                        or wordCount==800 or wordCount==900 or wordCount==1000 or wordCount==1100 or wordCount==1200%}
+                        <span class="as-wq-frame-word-count">{{wordCount}}</span>
+                        {% endif %}
+                    </div>
+                    {% endfor%}
+                    <!--行的最后一格-->
+                    {% set wordCount=wordCount+1%}
+                    <div class="as-wq-frame">
+                        {% if wordCount==100 or wordCount==200 or wordCount==300 or wordCount==400 or wordCount==500 or wordCount==600 or wordCount==700
+                        or wordCount==800 or wordCount==900 or wordCount==1000 or wordCount==1100 or wordCount==1200%}
+                        <span class="as-wq-frame-word-count">{{wordCount}}</span>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="as-wq-row-divider"></div>
+                {% endfor%}
+                <!--最后一行-->
+                <div class="as-wq-row">
+                    {% for col in range(0,15)%} {% set wordCount=wordCount+1%}
+                    <div class="as-wq-frame-border">
+                        {% if wordCount==100 or wordCount==200 or wordCount==300 or wordCount==400 or wordCount==500 or wordCount==600 or wordCount==700
+                        or wordCount==800 or wordCount==900 or wordCount==1000 or wordCount==1100 or wordCount==1200%}
+                        <span class="as-wq-frame-word-count">{{wordCount}}</span>
+                        {% endif %}</div>
+                    {% endfor%} {% set wordCount=wordCount+1%}
+                    <div class="as-wq-frame">
+                        {% if wordCount==100 or wordCount==200 or wordCount==300 or wordCount==400 or wordCount==500 or wordCount==600 or wordCount==700
+                        or wordCount==800 or wordCount==900 or wordCount==1000 or wordCount==1100 or wordCount==1200%}
+                        <span class="as-wq-frame-word-count">{{wordCount}}</span>
+                        {% endif %}</div>
+                </div>
+            </div>
+        </div>
+
+        {% for column in range(0,2)%}
+        <div class="as-wq-column">
+            <div class="as-wq-area-content">
+                {% for row in range(0,25)%}
+                <div class="as-wq-row">
+                    {% for col in range(0,15)%} {% set wordCount=wordCount+1%}
+                    <div class="as-wq-frame-border">
+                        {% if wordCount==100 or wordCount==200 or wordCount==300 or wordCount==400 or wordCount==500 or wordCount==600 or wordCount==700
+                        or wordCount==800 or wordCount==900 or wordCount==1000 or wordCount==1100 or wordCount==1200%}
+                        <span class="as-wq-frame-word-count">{{wordCount}}</span>
+                        {% endif %}
+                    </div>
+                    {% endfor%}
+                    <!--行的最后一格-->
+                    {% set wordCount=wordCount+1%}
+                    <div class="as-wq-frame">
+                        {% if wordCount==100 or wordCount==200 or wordCount==300 or wordCount==400 or wordCount==500 or wordCount==600 or wordCount==700
+                        or wordCount==800 or wordCount==900 or wordCount==1000 or wordCount==1100 or wordCount==1200%}
+                        <span class="as-wq-frame-word-count">{{wordCount}}</span>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="as-wq-row-divider"></div>
+                {% endfor%}
+                <!--最后一行-->
+                <div class="as-wq-row">
+                    {% for col in range(0,15)%} {% set wordCount=wordCount+1%}
+                    <div class="as-wq-frame-border">
+                        {% if wordCount==100 or wordCount==200 or wordCount==300 or wordCount==400 or wordCount==500 or wordCount==600 or wordCount==700
+                        or wordCount==800 or wordCount==900 or wordCount==1000 or wordCount==1100 or wordCount==1200%}
+                        <span class="as-wq-frame-word-count">{{wordCount}}</span>
+                        {% endif %}</div>
+                    {% endfor%} {% set wordCount=wordCount+1%}
+                    <div class="as-wq-frame">
+                        {% if wordCount==100 or wordCount==200 or wordCount==300 or wordCount==400 or wordCount==500 or wordCount==600 or wordCount==700
+                        or wordCount==800 or wordCount==900 or wordCount==1000 or wordCount==1100 or wordCount==1200%}
+                        <span class="as-wq-frame-word-count">{{wordCount}}</span>
+                        {% endif %}</div>
+                </div>
+            </div>
+        </div>
+        {% endfor%}
+    </div>
+</div>
+

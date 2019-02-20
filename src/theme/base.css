@@ -1,0 +1,199 @@
+.as-score-area {
+    height: 0.8cm;
+    display: flex;
+    flex-direction: row;
+    padding-right: 0.3cm;
+    border-bottom: 0.01cm black solid;
+    border-right: 0.2cm black solid;
+    order: 2;
+    justify-content: flex-end;
+  }
+  .as-score-area-mini {
+    height: 0.65cm;
+  }
+  .as-score-area-ex {
+    height: 0.6cm;
+    display: flex;
+    flex-direction: row;
+    padding-right: 0.3cm;
+    border-bottom: 0.01cm black solid;
+    border-right: 0.2cm black solid;
+    border-top: 0.01cm black solid;
+    order: 2;
+  }
+  .as-score-area-item,
+  .as-score-area-item-placeholder {
+    width: 0.8cm;
+    height: 0.8cm;
+    font-size: 9pt;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .as-score-area-item-mini {
+    width: 0.65cm;
+    height: 0.65cm;
+  }
+  .as-score-area-item-border {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .as-score-area-item-border div {
+    height: 0.2cm;
+  }
+  
+  .as-score-area-item-border-s {
+    border-left: 0.03cm black solid;
+  }
+  
+  .as-toolbox {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    flex-flow: nowrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-color: white;
+    white-space: nowrap;
+    height: 30px;
+    line-height: 22px;
+    border: 1px solid #ccd3de;
+  }
+  .as-toolbox div {
+    margin: 0.1cm 0.3cm;
+    color: #63a6f7;
+    font-size: 10pt;
+    cursor: pointer;
+  }
+  
+  .as-divider-v {
+    position: absolute;
+    height: 0.1cm;
+    order: 4;
+    cursor: n-resize;
+    z-index: 2;
+    background-color: #b2dfee;
+  }
+  .as-divider-h {
+    position: absolute;
+    width: 0.08cm;
+    order: 4;
+    cursor: e-resize;
+    z-index: 2;
+    background-color: #b2dfee;
+  }
+  
+  .as-stopLine {
+    position: absolute;
+    bottom: 1cm;
+    text-align: center;
+    width: 100%;
+    height: 0.05cm;
+    background-color: red;
+  }
+  
+  .as-foot {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    height: 1cm;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .as-foot-answer-tips {
+    font-size: 9pt;
+  }
+  .as-foot-school {
+    font-size: 8pt;
+    margin-top: 0.05cm;
+  }
+  .as-exam-identifier-block img {
+    width: 80%;
+  }
+  .as-tips-tiile {
+    font-size: 14px;
+  }
+  .as-icon-sure {
+    display: inline-block;
+    width: 0px;
+    height: 10px;
+    margin-left: 10px;
+    border-right: 20px solid #000;
+  }
+  .as-icon {
+    display: inline-block;
+    width: 18px;
+    height: 8px;
+    border: 1px solid #000;
+    position: relative;
+    margin: 0 2px;
+  }
+  .as-icon-a {
+    margin-left: 6px;
+  }
+  .as-icon-a i {
+    display: block;
+    width: 0px;
+    height: 4px;
+    border-right: 10px solid #000;
+    position: absolute;
+    bottom: 0px;
+    left: 4px;
+  }
+  .as-icon-b i {
+    font-size: 14px;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: 2px;
+  }
+  .as-icon-c i {
+    display: block;
+    width: 0px;
+    height: 8px;
+    border-right: 4px solid #000;
+    border-left: 4px solid #000;
+    border-radius: 4px;
+  
+    position: absolute;
+    top: 0;
+    left: 4px;
+  }
+  .as-icon-d i {
+    display: block;
+    width: 0px;
+    height: 100%;
+    border-right: 4px solid #000;
+    margin: 0 auto;
+  }
+  .as-icon-e {
+    background: #ccc;
+    text-align: center;
+  }
+  
+  .as-icon-e i {
+    display: block;
+    font-size: 8px;
+    font-family: Arial;
+    position: absolute;
+    top: -2px;
+    left: 5px;
+  }
+  .as-tips-sure {
+    width: 100%;
+    min-height: 50%;
+    height: auto;
+    border-bottom: 1px solid #000;
+  }
+  .as-tips-tiile-tips {
+    font-size: 12px;
+  }
+ 
+  

@@ -1,0 +1,68 @@
+
+<div class="as-score-area as-score-area-mini">
+
+  {% for i in range(1,score//10+1)|list|reverse %}
+    <div class="as-score-area-item-border">
+        <div class="as-score-area-item-border-s"></div>
+        <div></div>
+        <div class="as-score-area-item-border-s"></div>
+    </div>
+    <div class="as-score-area-item as-score-area-item-mini">{{i*10}}</div>
+    {% endfor %}
+    {% if score>9%}
+    {#  <div class="-border">
+        <div class="as-score-area-item-border-s"></div>
+        <div></div>
+        <div class="as-score-area-item-border-s"></div>
+    </div>
+   <div class="as-score-area-item-placeholder"></div> #}
+
+    {%for i in range(0,10)|list|reverse%}
+    <div class="as-score-area-item-border">
+        <div class="as-score-area-item-border-s"></div>
+        <div></div>
+        <div class="as-score-area-item-border-s"></div>
+    </div>
+    <div class="as-score-area-item as-score-area-item-mini">{{i}}</div>
+    {% endfor %}
+    <div class="as-score-area-item-border">
+        <div class="as-score-area-item-border-s"></div>
+        <div></div>
+        <div class="as-score-area-item-border-s"></div>
+    </div>
+    <div></div>
+    <div class="as-score-area-item-border">
+        <div class="as-score-area-item-border-s"></div>
+        <div></div>
+        <div class="as-score-area-item-border-s"></div>
+    </div>
+    <div class="as-score-area-item as-score-area-item-mini">0.5</div>
+    {% else%}
+    {%for i in range(0,(score+1)|round(0, 'floor'))|list|reverse%}
+    <div class="as-score-area-item-border">
+        <div class="as-score-area-item-border-s"></div>
+        <div></div>
+        <div class="as-score-area-item-border-s"></div>
+    </div>
+    <div class="as-score-area-item as-score-area-item-mini">{{i}}</div>
+    {% endfor %}
+    <div class="as-score-area-item-border">
+        <div class="as-score-area-item-border-s"></div>
+        <div></div>
+        <div class="as-score-area-item-border-s"></div>
+    </div>
+    <div></div>
+    <div class="as-score-area-item-border">
+        <div class="as-score-area-item-border-s"></div>
+        <div></div>
+        <div class="as-score-area-item-border-s"></div>
+    </div>
+    <div class="as-score-area-item as-score-area-item-mini">0.5</div>
+     {% endif %}
+
+    <div class="as-score-area-item-border">
+        <div class="as-score-area-item-border-s"></div>
+        <div></div>
+        <div class="as-score-area-item-border-s"></div>
+    </div>
+</div>

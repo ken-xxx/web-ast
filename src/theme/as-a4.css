@@ -1,0 +1,539 @@
+@page{
+    size:A4;
+    margin:0
+  }
+  @media print {
+    .as-paper {
+      display: flex;
+      flex-direction: column;
+    }
+    .as-toolbox {
+      display: none;
+    }
+  }
+  
+  @media screen {
+    .as-paper {
+      width: 43cm;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  
+  .as-page-1 {
+    position: relative;
+    width: 21cm;
+    height: 29.7cm;
+    background-color: white;
+  }
+  .as-page-2 {
+    position: relative;
+    width: 21cm;
+    height: 29.7cm;
+    background-color: white;
+  }
+  
+  .as-ext-loc-area {
+    position: absolute;
+    width: 19cm;
+    height: 27.7cm;
+    margin-top: 1cm;
+    margin-left: 1cm;
+    background-color: white;
+  }
+  
+  .as-ext-loc-lt {
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0cm;
+    left: 0cm;
+    border-top: 0.254cm solid black;
+    border-right: 0.508cm solid black;
+  }
+  
+  .as-ext-loc-lb {
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0cm;
+    left: 0cm;
+    border-bottom: 0.254cm solid black;
+    border-left: 0.508cm solid black;
+  }
+  
+  .as-ext-loc-rt {
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0cm;
+    right: 0cm;
+    border-bottom: 0.254cm solid black;
+    border-left: 0.508cm solid black;
+  }
+  
+  .as-ext-loc-rb {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 0.254cm solid black;
+    border-left: 0.508cm solid transparent;
+    bottom: 0cm;
+    right: 0cm;
+  }
+  
+  .as-main-area {
+    width: 18cm;
+    margin-top: 0.65cm;
+    margin-left: 0.5cm;
+    margin-right: 0.5cm;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .as-column {
+    width: 100%;
+  }
+  .as-column-1 {
+    order: 1;
+  }
+  .as-column-2 {
+    order: 2;
+  }
+  
+  .as-exam-title-block {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 14pt;
+  }
+  .as-exam-title-block div {
+    margin: 0cm 0.2cm;
+  }
+  
+  /**识别码区域**/
+  
+  .as-exam-identifier-class-block {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.2cm 0.5cm 0cm 0.5cm;
+  }
+  
+  .as-exam-identifier-block {
+    position: relative;
+    display: flex;
+    width: 8cm;
+    height: 1cm;
+    align-items: center;
+    border: 0.02cm rgb(100, 100, 100) dashed;
+    padding: 0.1cm 0.2cm;
+    font-size: 10pt;
+  }
+  
+  .as-exam-identifier-block img {
+    height: 1cm;
+  }
+  
+  .as-class-info-block {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 8cm;
+    height: 1cm;
+    align-items: center;
+    border: 0.02cm rgb(100, 100, 100) dashed;
+    padding: 0.1cm 0.2cm;
+    justify-content: space-between;
+  }
+  .as-class-info-block div {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    font-size: 10pt;
+    justify-content: space-between;
+  }
+  .as-class-info-block div div {
+    width: 2.5cm;
+    border-bottom: 0.02cm black solid;
+  }
+  
+  /**学生识别码及注意事项区域**/
+  
+  .as-tips-examinee-identifier-block {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.2cm 0.5cm 0cm 0.5cm;
+  }
+  
+  .as-tips {
+    position: relative;
+    /* display: flex; */
+    width: 8cm;
+    height: 2.5cm;
+    align-items: center;
+    border: 0.02cm rgb(100, 100, 100) dashed;
+    padding: 0.1cm 0.2cm;
+  }
+  
+  .as-examinee-identifier-block {
+    position: relative;
+    display: flex;
+    width: 8cm;
+    height: 2.5cm;
+    align-items: center;
+    border: 0.02cm rgb(100, 100, 100) dashed;
+    padding: 0.1cm 0.2cm;
+    justify-content: center;
+  }
+  
+  /*******************************************************************
+  *********** 选择题 *************************************************
+  ********************************************************************/
+  /**选择题区域**/
+  
+  .as-choice-question-block-title {
+    text-align: center;
+    margin: 0.3cm 0cm 0.2cm 0cm;
+  }
+  
+  .as-choice-question-block {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 0.5cm;
+    margin-left: -0.22cm;
+  }
+  
+  .as-cq-left-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0.2cm;
+  }
+  
+  /**纵向定位点区块**/
+  
+  .as-cq-v-h-loc-placeholder {
+    position: relative;
+    margin-bottom: 0.2cm;
+  }
+  
+  .as-cq-v-h-loc-placeholder div {
+    position: relative;
+    width: 0;
+    height: 0;
+    top: 0;
+    right: 0cm;
+    border-bottom: 0.254cm solid transparent;
+    border-left: 0.508cm solid transparent;
+  }
+  
+  .as-cq-v-c-num-placeholder {
+    position: relative;
+    width: 0.508cm;
+    height: 0.254cm;
+    top: 0;
+    right: 0cm;
+    font-size: 8pt;
+    margin: 0.2cm 0cm;
+    text-align: center;
+  }
+  
+  .as-cq-v-loc-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 0.02cm white solid;
+    border-bottom: 0.02cm white solid;
+  }
+  
+  .as-cq-v-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.2cm 0cm;
+  }
+  
+  .as-cq-v-group-opt {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .as-cq-v-group-opt div {
+    position: relative;
+    width: 0;
+    height: 0;
+    top: 0;
+    right: 0cm;
+    border-bottom: 0.254cm solid black;
+    border-left: 0.508cm solid black;
+    margin-top: 0.07cm;
+    margin-bottom: 0.07cm;
+  }
+  
+  .as-cq-right-block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  /**题号定位点**/
+  
+  .as-cq-h-loc-block {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0.02cm;
+    margin-bottom: 0.2cm;
+  }
+  
+  .as-cq-h-group {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0.3cm;
+    margin-right: 0.3cm;
+  }
+  
+  .as-cq-h-group div {
+    position: relative;
+    width: 0;
+    height: 0;
+    top: 0;
+    right: 0cm;
+    border-bottom: 0.254cm solid black;
+    border-left: 0.508cm solid black;
+    margin-left: 0.1cm;
+    margin-right: 0.1cm;
+  }
+  
+  /**选择题题目选项区块**/
+  
+  .as-cq-c-loc-block {
+    display: flex;
+    flex-direction: column;
+    border: 0.02cm black solid;
+  }
+  
+  /**题号**/
+  
+  .as-cq-c-group-num-block {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .as-cq-c-group-num {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0.4cm;
+    margin-right: 0.4cm;
+    align-items: center;
+    margin-top: 0.2cm;
+    margin-bottom: 0.2cm;
+  }
+  
+  .as-cq-c-group-num div {
+    position: relative;
+    width: 0.508cm;
+    height: 0.254cm;
+    top: 0;
+    right: 0cm;
+    font-size: 8pt;
+  
+    margin-left: 0.1cm;
+    margin-right: 0.1cm;
+    text-align: center;
+  }
+  
+  /**题目选项**/
+  
+  .as-cq-c-v-group {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .as-cq-c-group-q {
+    display: flex;
+    flex-direction: row;
+    margin: 0.2cm 0.3cm;
+  }
+  
+  .as-cq-c-group-opt {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .as-cq-c-group-opt div {
+    position: relative;
+    width: 0.488cm;
+    height: 0.234cm;
+    border: 0.01cm solid black;
+    margin-top: 0.07cm;
+    margin-bottom: 0.07cm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .as-cq-c-group-opt div span {
+    font-size: 8pt;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .as-cq-c-group-q-opt {
+    display: flex;
+    flex-direction: column;
+    margin: 0cm 0.1cm;
+  }
+  
+  .as-cq-c-num {
+    position: relative;
+    width: 0.508cm;
+    height: 0.254cm;
+    top: 0;
+    right: 0cm;
+    font-size: 8pt;
+    margin: 0.2cm 0cm;
+    text-align: center;
+  }
+  
+  /*********************************************************************
+  ********************* 非选择题 ***************************************
+  *********************************************************************/
+  .as-other-question-block-title {
+    text-align: center;
+    margin: 0.3cm 0cm 0.2cm 0cm;
+  }
+  
+  .as-other-question-block {
+    display: flex;
+    flex-direction: column;
+    margin: 0cm 0.5cm;
+    border-left: 0.02cm black solid;
+    border-right: 0.02cm black solid;
+    border-bottom: 0.02cm black solid;
+  }
+  
+  .as-aq-area-block {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-top: 0.02cm black solid;
+  }
+  .as-aq-area-title {
+    margin: 0.2cm 0.2cm 0cm 0.2cm;
+    font-size: 10pt;
+    word-wrap:break-word;
+  }
+  .as-aq-area-title p {
+    margin: 0;
+  }
+  .as-aq-area-choose-todo {
+    display: flex;
+    flex-direction: row;
+    margin: 0.2cm;
+    font-size: 10pt;
+    align-items: center;
+    order: 2;
+  }
+  .as-aq-area-choose-todo-qnum-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+  }
+  .as-aq-area-choose-todo-qnum-block div {
+    position: relative;
+    min-width: 0.688cm;
+    height: 0.334cm;
+    border: 0.01cm solid black;
+    margin: 0.1cm;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .as-aq-area-choose-todo-qnum-block div span {
+    font-size: 8pt;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .as-aq-area-title-score {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    order: 1;
+  }
+  
+  .as-aq-area-aid {
+    margin: 0cm 0.5cm;
+    order: 3;
+  }
+  
+  .as-aq-area-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin: 0.2cm 0.5cm;
+    order: 4;
+  }
+  
+  .as-aq-area-content-flex-row {
+    flex-direction: row;
+  }
+  .as-aq-area-content-flex-column {
+    flex-direction: column;
+  }
+  .as-aq-area-content p {
+    width: 100%;
+    margin: 0.2cm 0cm;
+    border-bottom: 0.01cm rgb(60, 60, 60) solid;
+  }
+  
+  .as-aq-fq-item {
+    border-bottom: 0.01cm rgb(60, 60, 0) solid;
+    width: 30%;
+    position: relative;
+    height: 16px;
+    margin: 0.2cm;
+  }
+  
+  .as-aq-fq-item-num {
+    font-size: 10pt;
+    position: absolute;
+  }
+  
+  .as-aq-fq-item-blank {
+    width: 100%;
+  }
+  
+  .as-aq-fq-item-qnum {
+    font-size: 10pt;
+    display: block;
+    position: absolute;
+    height: 18px;
+    background: #fff;
+    top: 2px;
+  }
+  
